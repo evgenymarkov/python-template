@@ -1,0 +1,13 @@
+{
+  "name": "python-template",
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile",
+  },
+  "extensions": [
+    "ms-python.python"
+  ],
+  "forwardPorts": [
+    8000
+  ]
+}
