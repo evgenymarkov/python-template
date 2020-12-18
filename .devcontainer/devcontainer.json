@@ -5,7 +5,8 @@
     "dockerfile": "Dockerfile",
   },
   "extensions": [
-    "ms-python.python"
+    "ms-python.python",
+    "editorconfig.editorconfig"
   ],
   "forwardPorts": [
     8000
