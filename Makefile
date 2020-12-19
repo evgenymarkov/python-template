@@ -8,6 +8,7 @@ setup:
 .PHONY: format
 format:
 	@echo Running formatters...
+	@isort --atomic .
 	@black .
 
 .PHONY: lint
