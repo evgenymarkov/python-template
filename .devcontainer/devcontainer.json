@@ -10,10 +10,8 @@
     "editorconfig.editorconfig"
   ],
   "settings": {
+    "git-graph.showStatusBarItem": false,
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "/usr/local/bin/black"
-  },
-  "forwardPorts": [
-    8000
-  ]
+  }
 }
