@@ -13,7 +13,10 @@
     "git-graph.showStatusBarItem": false,
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "/usr/local/bin/black",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/usr/local/bin/flake8",
     "python.sortImports.path": "/usr/local/bin/isort",
-    "python.sortImports.args": ["--atomic"]
+    "python.sortImports.args": ["--atomic"],
   }
 }

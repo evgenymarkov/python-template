@@ -15,6 +15,7 @@ format:
 lint:
 	@echo Running linters...
 	@black --check .
+	@flake8 .
 
 .PHONY: test
 test:
