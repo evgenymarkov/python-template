@@ -9,6 +9,10 @@
     "mhutchie.git-graph",
     "editorconfig.editorconfig"
   ],
+  "settings": {
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "/usr/local/bin/black"
+  },
   "forwardPorts": [
     8000
   ]

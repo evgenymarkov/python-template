@@ -8,10 +8,12 @@ setup:
 .PHONY: format
 format:
 	@echo Running formatters...
+	@black .
 
 .PHONY: lint
 lint:
 	@echo Running linters...
+	@black --check .
 
 .PHONY: test
 test:
