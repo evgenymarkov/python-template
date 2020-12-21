@@ -1,6 +1,7 @@
 .PHONY: setup
 setup:
 	@echo Installing dependencies
+	@pipenv install
 
 	@echo Setting up git hooks
 	@git config core.hooksPath .githooks
@@ -15,7 +16,8 @@ format:
 lint:
 	@echo Running linters...
 	@black --check .
-	@flake8 .
+	@pyright
+	@flake8
 
 .PHONY: test
 test:

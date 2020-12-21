@@ -5,15 +5,15 @@
     "dockerfile": "Dockerfile",
   },
   "extensions": [
-    "ms-python.python",
-    "ms-python.vscode-pylance",
+    "editorconfig.editorconfig",
     "mhutchie.git-graph",
-    "editorconfig.editorconfig"
+    "redhat.vscode-yaml",
+    "ms-python.vscode-pylance",
+    "ms-python.python"
   ],
   "settings": {
     "git-graph.showStatusBarItem": false,
     "python.languageServer": "Pylance",
-    "python.analysis.typeCheckingMode": "strict",
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "/usr/local/bin/black",
     "python.linting.pylintEnabled": false,
