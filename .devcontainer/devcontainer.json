@@ -29,6 +29,7 @@
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Path": "/usr/local/bin/flake8",
+    "python.terminal.activateEnvironment": false,
     "python.testing.pytestEnabled": true,
     "python.sortImports.path": "/usr/local/bin/isort",
     "python.sortImports.args": ["--atomic"],
