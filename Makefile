@@ -22,6 +22,7 @@ lint:
 .PHONY: test
 test:
 	@echo Running tests...
+	@pipenv run pytest
 
 .PHONY: coverage
 coverage:

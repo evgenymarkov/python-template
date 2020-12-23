@@ -13,6 +13,13 @@
     "ms-python.python",
   ],
   "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/*.pyc": true,
+      "**/.DS_Store": true,
+      "**/__pycache__": true,
+      "**/.pytest_cache": true,
+    },
     "git-graph.showStatusBarItem": false,
     "python.languageServer": "Pylance",
     "python.formatting.provider": "black",
@@ -20,6 +27,7 @@
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Path": "/usr/local/bin/flake8",
+    "python.testing.pytestEnabled": true,
     "python.sortImports.path": "/usr/local/bin/isort",
     "python.sortImports.args": ["--atomic"],
   }
