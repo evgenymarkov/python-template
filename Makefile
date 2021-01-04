@@ -1,9 +1,9 @@
 .PHONY: setup
 setup:
-	@echo Installing dependencies
-	@pipenv install
+	@echo Installing dependencies...
+	@poetry install
 
-	@echo Setting up git hooks
+	@echo Setting up git hooks...
 	@git config core.hooksPath .githooks
 
 .PHONY: format
@@ -22,8 +22,10 @@ lint:
 .PHONY: test
 test:
 	@echo Running tests...
-	@pipenv run pytest
+	@poetry run pytest
 
 .PHONY: coverage
 coverage:
 	@echo Calculating test coverage...
+	@poetry run pytest --cov
+	@poetry run coverage erase
