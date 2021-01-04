@@ -1,4 +1,10 @@
+# Cache
 *.pyc
-.venv/
 __pycache__/
 .pytest_cache/
+
+# Coverage
+.coverage
+
+# Environment
+.venv/
