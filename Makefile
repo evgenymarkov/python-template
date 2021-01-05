@@ -1,5 +1,5 @@
-.PHONY: setup
-setup:
+.PHONY: init
+init:
 	@echo Installing dependencies...
 	@poetry install
 
@@ -9,15 +9,15 @@ setup:
 .PHONY: format
 format:
 	@echo Running formatters...
-	@isort --atomic .
-	@black .
+	@poetry run isort --atomic .
+	@poetry run black .
 
 .PHONY: lint
 lint:
 	@echo Running linters...
-	@black --check .
+	@poetry run black --check .
+	@poetry run flakehell lint .
 	@pyright
-	@flake8
 
 .PHONY: test
 test:
