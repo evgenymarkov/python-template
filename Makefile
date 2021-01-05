@@ -15,8 +15,8 @@ format:
 .PHONY: lint
 lint:
 	@echo Running linters...
-	@poetry run black --check .
 	@poetry run flakehell lint .
+	@poetry run black --check .
 	@pyright
 
 .PHONY: test
